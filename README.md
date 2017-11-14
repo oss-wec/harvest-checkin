@@ -27,11 +27,11 @@ NodeJS runs the world these days in modern web development. It is used to instal
 
 Open GitHub for Windows then File>Clone Repository. Then start typing oss-wec/harvest to find this repo to clone. 
 
-![github desktop](docs/img/github desktop.png)
+![github desktop](https://raw.githubusercontent.com/oss-wec/harvest-checkin/master/docs/img/github%20desktop.png)
 
 Once the repo is cloned find it in the GitHub folder of you computer and open with VS Code.
 
-## Build Setup
+## Running the Dev Server
 
 ``` bash
 # install dependencies
@@ -46,5 +46,3 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
