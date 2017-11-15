@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    
+    <test />
+
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
@@ -20,11 +22,23 @@
 </template>
 
 <script>
+import test from './test'
+
 export default {
+  components: { test },
+
   name: 'hello',
+
   data () {
     return {
-      msg: 'Welcome to Your Vue.js PWA'
+      msg: 'Welcome',
+      newmsg: 'new message'
+    }
+  },
+
+  methods: {
+    changeMsg () {
+      this.msg = this.newmsg
     }
   }
 }
