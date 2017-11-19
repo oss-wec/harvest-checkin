@@ -20,6 +20,36 @@
         </div>
         <p class="help">What is the hunters tag number?</p>
       </div>
+
+      <div class="field">
+        <div class="control is-expanded">
+          <label class="label">Species</label>
+          <div class="select is-fullwidth">
+            <select name="species"
+                    v-model="species">
+              <option value="desert bighorn">desert bighorn</option>
+              <option value="California bighorn">Califronia bighorn</option>
+              <option value="Rocky Mountain bighorn">Rocky Mountain bighorn</option>
+              <option value="mountain goat">mountain goat</option>
+            </select>
+          </div>
+          <p class="help">What species is the hunter checking in?</p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="samples" class="checkbox">
+          <input  type="checkbox"
+                  v-model="samples">
+            Samples?
+        </label>
+        <p class="help">Where samples collected?`</p>
+      </div>
+
+      <div class="field">
+        <label class="label">Comments</label>
+        <textarea v-model="comments" class="textarea"></textarea>
+      </div>
     </form>
 
     <hr />
@@ -35,7 +65,10 @@ export default {
 
   data () {
     return {
-      tagNumber: null
+      tagNumber: '',
+      species: '',
+      samples: false,
+      comments: ''
     }
   }
 
